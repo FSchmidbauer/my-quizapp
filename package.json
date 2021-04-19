@@ -1,0 +1,24 @@
+{
+  "name": "my-quizapp",
+  "version": "1.0.0",
+  "description": "This is an awesome quiz app",
+  "main": "index.js",
+  "scripts": {
+      "start": "snowpack dev",
+      "build": "snowpack build",
+      "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FSchmidbauer/my-quizapp.git"
+  },
+  "author": "FSchmidbauer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FSchmidbauer/my-quizapp/issues"
+  },
+  "homepage": "https://github.com/FSchmidbauer/my-quizapp#readme",
+  "devDependencies": {
+    "snowpack": "^3.3.3"
+  }
+}
