@@ -1,20 +1,34 @@
 .question-box {
-  width: 100%;
+  width: 95%;
   background-color: lightgray;
+  border-radius: 3rem;
   border-bottom: 1rem solid white;
-  padding: 1.5rem;
   text-align: center;
   margin: 0 auto;
 }
 
 .question-box__bookmark {
   position: relative;
-  border: 0.1rem solid black;
-  height: 4rem;
+  border: 0.1rem solid white;
+  border-radius: 20rem;
   width: 4rem;
-  left: 14rem;
-  bottom: 2.2rem;
-  margin-bottom: -2.2rem;
+  left: 15rem;
+  top: 0rem;
+  margin-top: -1rem;
+  transform: scale(1);
+  transition: transform 0.5s ease-in;
+}
+
+.question-box__bookmark:hover {
+  position: relative;
+  border: 0.1rem solid white;
+  border-radius: 20rem;
+  width: 4rem;
+  left: 15rem;
+  top: 0rem;
+  margin-top: -1rem;
+  cursor: pointer;
+  transform: scale(1.5);
 }
 
 [disabled] {
@@ -22,27 +36,28 @@
 }
 
 .question-box__headline {
-  width: 30%;
-  border: 0.2rem solid black;
+  width: 25%;
+  background-color: white;
+  border-radius: 1rem;
   margin: 0 auto;
 }
 
 .question-box__question {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .question-box__answer:hover {
-  width: 40%;
+  width: 100%;
   background-color: skyblue;
+  color: white;
   font-weight: bold;
-  margin: 0 auto;
   cursor: pointer;
 }
 
 .tipp-box {
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
+  width: 40%;
   background-color: white;
   border: 0.2rem solid skyblue;
   color: black;
@@ -50,7 +65,7 @@
   cursor: pointer;
 }
 
-.tipp-box__icon--closed {
+.tipp-box__icon {
   transform: rotate(90deg);
   height: 2rem;
   width: 2rem;
@@ -58,7 +73,7 @@
   margin-left: 1rem;
 }
 
-.tipp-box__icon--open {
+.tipp-box__icon:hover {
   transform: scaleY(-1);
   height: 2rem;
   width: 2rem;
@@ -66,13 +81,22 @@
   margin-left: 1rem;
 }
 
+.tipp-box__icon:hover .tipp-box__text {
+  display: block;
+  border-top: 0.2rem lightgrey solid;
+  padding-top: 0.5rem;
+  margin-top: -0.1rem;
+  text-align: center;
+}
+
 .tipp-box__headline {
-  padding: 1rem;
+  padding: 0.5rem;
   margin: 0 auto;
   font-weight: bold;
 }
 
 .tipp-box__text {
+  display: none;
   border-top: 0.2rem lightgrey solid;
   padding-top: 0.5rem;
   margin-top: -0.1rem;
@@ -104,10 +128,21 @@
 }
 
 .new-box__form {
-  text-align: center;
+  width: 95%;
   background-color: lightgray;
-  padding: 1rem 0 2rem 0;
-  margin-bottom: 2rem;
+  border-radius: 3rem;
+  border-bottom: 1rem solid white;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.new-box__headline {
+  width: 80%;
+  background-color: white;
+  border-radius: 1rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+  text-align: center;
 }
 
 .new-box__submitbutton {
