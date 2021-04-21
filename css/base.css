@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: verdana;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  padding-bottom: 5rem;
+}
+
+.page-headline {
+  width: 100%;
+  background-color: skyblue;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: white;
+}
