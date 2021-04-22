@@ -1,13 +1,17 @@
 main {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
 }
 
 .question-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
   background-color: lightgray;
   border-radius: 3rem;
-  border-bottom: 1rem solid white;
   margin: 1rem;
   padding: 0 1rem;
   text-align: center;
@@ -15,25 +19,21 @@ main {
 }
 
 .question-box__bookmark {
-  position: relative;
-  border: 0.1rem solid white;
+  position: absolute;
   border-radius: 20rem;
   width: 4rem;
-  left: 15rem;
-  top: 0rem;
-  margin-top: -1rem;
+  top: -1.5rem;
+  right: 3rem;
   transform: scale(1);
   transition: transform 0.5s ease-in;
 }
 
 .question-box__bookmark:hover {
-  position: relative;
-  border: 0.1rem solid white;
+  position: absolute;
   border-radius: 20rem;
   width: 4rem;
-  left: 15rem;
-  top: 0rem;
-  margin-top: -1rem;
+  top: -1.5rem;
+  right: 3rem;
   cursor: pointer;
   transform: scale(1.5);
 }
@@ -43,17 +43,13 @@ main {
 }
 
 .question-box__headline {
-  width: 25%;
-  background-color: white;
   border-radius: 1rem;
-  margin: 0 auto;
+  background-color: white;
+  margin: 3rem 13rem 1rem 13rem;
 }
 
 .question-box__question {
   font-weight: 500;
-  width: 70%;
-  margin: 0 auto;
-  padding-top: 1.5rem;
 }
 
 .question-box__answer:hover {
@@ -65,13 +61,10 @@ main {
 }
 
 .tipp-box {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
   background-color: white;
   border: 0.2rem solid skyblue;
   color: black;
-  margin: 0 auto;
+  margin: 1rem 10rem 0rem 10rem;
   cursor: pointer;
 }
 
@@ -107,7 +100,6 @@ main {
 .tipp-box__text {
   border-top: 0.2rem lightgrey solid;
   padding: 0.5rem;
-  margin-top: -0.1rem;
   text-align: center;
 }
 
@@ -135,13 +127,14 @@ main {
 }
 
 .formnew {
-  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 1rem;
   background-color: lightgray;
   border-radius: 3rem;
-  border-bottom: 1rem solid white;
   text-align: center;
   justify-content: center;
-  margin: 0 auto;
   padding: 1rem;
 }
 
@@ -152,9 +145,10 @@ main {
 .formnew__submitbutton {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
   background-color: white;
   border: 0.2rem solid skyblue;
+  padding: 0 1rem;
+  margin: 0 auto;
   color: black;
   cursor: pointer;
 }
@@ -163,13 +157,11 @@ main {
   transform: rotate(90deg);
   height: 2rem;
   width: 2rem;
+  margin-right: 1rem;
   align-self: center;
-  margin-left: 1rem;
 }
 
 .formnew__submittext {
-  padding: 1rem;
-  margin: 0 auto;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -177,12 +169,12 @@ main {
 .profile {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  flex-direction: column;
   background-color: lightgray;
   border-radius: 3rem;
   color: black;
-  padding: 1rem 0;
-  margin: 0 auto;
+  margin: 1rem;
+  padding: 1rem;
   justify-content: center;
 }
 
@@ -191,39 +183,36 @@ main {
   width: 10rem;
   border: 0.2rem solid black;
   border-radius: 20rem;
+  align-self: center;
 }
 
 .profile__name {
   align-self: center;
-  padding-left: 4rem;
 }
 
 .profile__description {
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 2rem;
+  margin: 2rem;
   text-align: center;
 }
 
 .profile__interestbox {
-  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   background-color: lightgrey;
   border-radius: 3rem;
-  padding: 0 2rem 1rem 2rem;
-  margin: 2rem;
-}
-
-.profile__interestheadline {
+  margin: 0 1rem 2rem 1rem;
+  justify-content: center;
   text-align: center;
 }
 
 .profile__logoutbutton {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  padding: 0 1rem;
   background-color: white;
   border: 0.2rem solid skyblue;
+  padding: 0 1rem;
+  margin: 0 auto;
   color: black;
   cursor: pointer;
 }
