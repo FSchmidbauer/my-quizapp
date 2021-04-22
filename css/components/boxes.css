@@ -1,10 +1,17 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .question-box {
-  width: 95%;
   background-color: lightgray;
   border-radius: 3rem;
   border-bottom: 1rem solid white;
+  margin: 1rem;
+  padding: 0 1rem;
   text-align: center;
-  margin: 0 auto;
+  justify-content: center;
 }
 
 .question-box__bookmark {
@@ -44,6 +51,9 @@
 
 .question-box__question {
   font-weight: 500;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 1.5rem;
 }
 
 .question-box__answer:hover {
@@ -91,7 +101,6 @@
 
 .tipp-box__headline {
   padding: 0.5rem;
-  margin: 0 auto;
   font-weight: bold;
 }
 
@@ -105,12 +114,11 @@
 .tag-cloud {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin: 2rem 0;
   justify-content: center;
 }
 
 .tag-cloud__element {
-  list-style: none;
   background-color: darkblue;
   border-radius: 1rem;
   padding: 1rem;
@@ -198,21 +206,22 @@
 }
 
 .profile__interestbox {
+  width: 95%;
   background-color: lightgrey;
   border-radius: 3rem;
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
+  padding: 0 2rem 1rem 2rem;
+  margin: 2rem;
 }
 
 .profile__interestheadline {
-  padding-top: 1rem;
   text-align: center;
 }
 
 .profile__logoutbutton {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  justify-content: center;
+  padding: 0 1rem;
   background-color: white;
   border: 0.2rem solid skyblue;
   color: black;
@@ -224,12 +233,10 @@
   height: 2rem;
   width: 2rem;
   align-self: center;
-  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .profile__logouttext {
-  padding: 1rem;
-  margin: 0 auto;
   font-size: 2rem;
   font-weight: bold;
 }
