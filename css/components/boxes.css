@@ -9,6 +9,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  max-width: 40rem;
   position: relative;
   background-color: lightgray;
   border-radius: 3rem;
