@@ -5,15 +5,12 @@
 }
 
 .question-box {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  max-width: 40rem;
   position: relative;
   background-color: lightgray;
   border-radius: 3rem;
-  margin: 1rem;
-  padding: 0 1rem;
+  margin: 2rem 1rem;
+  padding: 3rem 1rem 0.1rem 1rem;
+  max-width: 30rem;
   text-align: center;
   justify-content: center;
 }
@@ -45,7 +42,7 @@
 .question-box__headline {
   border-radius: 1rem;
   background-color: white;
-  margin: 3rem 13rem 1rem 13rem;
+  margin: 0 3rem;
 }
 
 .question-box__question {
@@ -64,7 +61,6 @@
   background-color: white;
   border: 0.2rem solid skyblue;
   color: black;
-  margin: 1rem 10rem 0rem 10rem;
   cursor: pointer;
 }
 
@@ -106,6 +102,7 @@
 .tag-cloud {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   margin: 2rem 0;
   justify-content: center;
 }
@@ -127,9 +124,6 @@
 }
 
 .formnew {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   margin: 1rem;
   background-color: lightgray;
   border-radius: 3rem;
@@ -138,7 +132,19 @@
   padding: 1rem;
 }
 
+#formnew__newquestion {
+  height: 4rem;
+  width: 80%;
+}
+
+#formnew__newanswer {
+  height: 4rem;
+  width: 80%;
+}
+
 #formnew__newtags {
+  height: 4rem;
+  width: 80%;
   margin-bottom: 2rem;
 }
 
@@ -162,7 +168,7 @@
 }
 
 .formnew__submittext {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -226,6 +232,6 @@
 }
 
 .profile__logouttext {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: bold;
 }
