@@ -14,16 +14,16 @@
             </header>
     </header>
     <main>
-    <form class="new-box__form" action="">
-        <label for="new-box__newquestion"><h3 class="new-box__headline">Neue Frage</h3></label>
-        <input type="text" name="newquestion" id="new-box__newquestion">
-        <label for="new-box__newanswer"><h3 class="new-box__headline>Neue Antwort</h3></label>
-        <input type="text" name="newanswer" id="new-box__newanswer">
-        <label for="new-box__newtags"><h3 class="new-box__headline">Dazugehörige Tags (mit Komma getrennt)</h3></label>
-        <input type="text" name="newtags" id="new-box__newtags">
-        <button type="submit" class="new-box__submitbutton">
-            <img class="tipp-box__icon--closed" src="aufklapp-pfeil.png" alt="Icon Pfeil nach rechts">
-            <h3 type="text" class="new-box__submittext">Hinzufügen</h3>
+    <form class="formnew" action="">
+        <label for="formnew__newquestion"><h3 class="formnew__headline">Neue Frage</h3></label>
+        <textarea name="newquestion" id="formnew__newquestion" cols="70" rows="10"></textarea>
+        <label for="formnew__newanswer"><h3 class="formnew__headline">Neue Antwort</h3></label>
+        <textarea name="newanswer" id="formnew__newanswer" cols="70" rows="10"></textarea>
+        <label for="formnew__newtags"><h3 class="formnew__headline">Tags (mit Komma getrennt)</h3></label>
+        <textarea name="newtags" id="formnew__newtags" cols="70" rows="10"></textarea>
+        <button type="submit" class="formnew__submitbutton">
+            <img class="formnew__submitpfeil" src="aufklapp-pfeil.png" alt="Icon Pfeil nach rechts">
+            <p class="formnew__submittext">Hinzufügen</p>
         </button>
     </form>
     </main>

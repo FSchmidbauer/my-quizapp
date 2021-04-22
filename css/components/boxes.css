@@ -65,7 +65,7 @@
   cursor: pointer;
 }
 
-.tipp-box__icon {
+.tipp-box__aufklapppfeil {
   transform: rotate(90deg);
   height: 2rem;
   width: 2rem;
@@ -73,7 +73,7 @@
   margin-left: 1rem;
 }
 
-.tipp-box__icon:hover {
+.tipp-box__aufklapppfeil:hover {
   transform: scaleY(-1);
   height: 2rem;
   width: 2rem;
@@ -96,9 +96,8 @@
 }
 
 .tipp-box__text {
-  display: none;
   border-top: 0.2rem lightgrey solid;
-  padding-top: 0.5rem;
+  padding: 0.5rem;
   margin-top: -0.1rem;
   text-align: center;
 }
@@ -127,39 +126,44 @@
   color: black;
 }
 
-.new-box__form {
+.formnew {
   width: 95%;
   background-color: lightgray;
   border-radius: 3rem;
   border-bottom: 1rem solid white;
   text-align: center;
+  justify-content: center;
   margin: 0 auto;
+  padding: 1rem;
 }
 
-.new-box__headline {
-  width: 80%;
-  background-color: white;
-  border-radius: 1rem;
-  margin: 0 auto;
-  padding: 2rem 0;
-  text-align: center;
+#formnew__newtags {
+  margin-bottom: 2rem;
 }
 
-.new-box__submitbutton {
-  background-color: white;
-  color: black;
-  border: 0.2rem solid skyblue;
-  width: 50%;
-  margin: 0 auto;
+.formnew__submitbutton {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
+  background-color: white;
+  border: 0.2rem solid skyblue;
+  color: black;
   cursor: pointer;
 }
 
-.new-box__submittext {
-  font-weight: bold;
-  margin: 0 auto;
+.formnew__submitpfeil {
+  transform: rotate(90deg);
+  height: 2rem;
+  width: 2rem;
+  align-self: center;
+  margin-left: 1rem;
+}
+
+.formnew__submittext {
   padding: 1rem;
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .profile {
@@ -167,6 +171,7 @@
   flex-wrap: wrap;
   width: 100%;
   background-color: lightgray;
+  border-radius: 3rem;
   color: black;
   padding: 1rem 0;
   margin: 0 auto;
@@ -192,30 +197,39 @@
   text-align: center;
 }
 
-.interests {
+.profile__interestbox {
   background-color: lightgrey;
+  border-radius: 3rem;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
 }
 
-.interests__headline {
+.profile__interestheadline {
   padding-top: 1rem;
   text-align: center;
 }
 
-.logout {
+.profile__logoutbutton {
   display: flex;
   flex-wrap: wrap;
-  width: 30%;
+  margin: 0 auto;
   background-color: white;
   border: 0.2rem solid skyblue;
-  margin: 0 auto;
-  cursor: pointer;
   color: black;
+  cursor: pointer;
 }
 
-.logout__headline {
+.profile__logoutpfeil {
+  transform: rotate(90deg);
+  height: 2rem;
+  width: 2rem;
+  align-self: center;
+  margin-left: 1rem;
+}
+
+.profile__logouttext {
   padding: 1rem;
   margin: 0 auto;
+  font-size: 2rem;
   font-weight: bold;
 }
