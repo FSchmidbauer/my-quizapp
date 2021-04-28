@@ -58,10 +58,12 @@
 }
 
 .tipp-box {
+  display: flex;
   background-color: white;
   border: 0.2rem solid skyblue;
   color: black;
   cursor: pointer;
+  margin: 0 auto;
 }
 
 .tipp-box__aufklapppfeil {
@@ -80,23 +82,28 @@
   margin-left: 1rem;
 }
 
-.tipp-box__icon:hover .tipp-box__text {
-  display: block;
-  border-top: 0.2rem lightgrey solid;
-  padding-top: 0.5rem;
-  margin-top: -0.1rem;
-  text-align: center;
+.tipp-box:hover .tipp-box__aufklapppfeil {
+  transform: scaleY(-1);
+  height: 2rem;
+  width: 2rem;
+  align-self: center;
+  margin-left: 1rem;
 }
 
 .tipp-box__headline {
   padding: 0.5rem;
   font-weight: bold;
+  font-size: 1rem;
 }
 
 .tipp-box__text {
   border-top: 0.2rem lightgrey solid;
   padding: 0.5rem;
   text-align: center;
+}
+
+.hidden {
+  opacity: 0%;
 }
 
 .tag-cloud {

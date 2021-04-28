@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>H2 Quiz-App</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="openboxfunction.js" defer></script>
 </head>
 <body>
     <header>
@@ -19,11 +20,12 @@
             <p class="question-box__answer">a) 0 Euro</p>
             <p class="question-box__answer">b) 70 Millionen Euro</p>
             <p class="question-box__answer">c) 700 Millionen Euro</p>
-            <details class="tipp-box">
-                <!--<img class="tipp-box__aufklapppfeil" src="aufklapp-pfeil.png" alt="Icon Pfeil nach rechts">
-                --><summary class="tipp-box__headline">Kleiner Tipp</summary>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint saepe aut quisquam qui commodi reiciendis nisi praesentium, harum quae temporibus laborum sunt architecto officia suscipit, sed adipisci ipsum aliquam dignissimos.
-            </details>
+            <button class="tipp-box">
+                <img class="tipp-box__aufklapppfeil" src="aufklapp-pfeil.png" alt="Icon Pfeil nach rechts">
+                <p class="tipp-box__headline">Kleiner Tipp</p>
+            </button>
+                <p class="tipp-box__text hidden">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint saepe aut quisquam qui commodi reiciendis nisi praesentium, harum quae temporibus laborum sunt architecto officia suscipit, sed adipisci ipsum aliquam dignissimos.
+                </p>
             <section class="tag-cloud">
                <span class="tag-cloud__element">Förderung</span>
                <span class="tag-cloud__element">Mobilität</span>
@@ -39,11 +41,12 @@
             <p class="question-box__answer">a) 15</p:hover>
             <p class="question-box__answer">b) 66</p>
             <p class="question-box__answer">c) 92</p>
-            <details class="tipp-box">
-                <!--<img class="tipp-box__aufklapppfeil" src="aufklapp-pfeil.png" alt="Icon Pfeil nach rechts">
-                --><summary class="tipp-box__headline">Kleiner Tipp</summary>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint saepe aut quisquam qui commodi reiciendis nisi praesentium, harum quae temporibus laborum sunt architecto officia suscipit, sed adipisci ipsum aliquam dignissimos.
-            </details>
+            <button class="tipp-box">
+                <img class="tipp-box__aufklapppfeil" src="aufklapp-pfeil.png" alt="Icon Pfeil nach rechts">
+                <p class="tipp-box__headline">Kleiner Tipp</p>
+            </button>
+                <p class="tipp-box__text hidden">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint saepe aut quisquam qui commodi reiciendis nisi praesentium, harum quae temporibus laborum sunt architecto officia suscipit, sed adipisci ipsum aliquam dignissimos.
+                </p>
             <section class="tag-cloud">
                <span class="tag-cloud__element">Tankstellen</span>
                <span class="tag-cloud__element">Anzahl</span>
@@ -59,11 +62,12 @@
                 <p class="question-box__answer">a) 650 km</p>
                 <p class="question-box__answer">b) 300 km</p>
                 <p class="question-box__answer">c) 520 km</p>
-                <details class="tipp-box">
-                    <!--<img class="tipp-box__aufklapppfeil" src="aufklapp-pfeil.png" alt="Icon Pfeil nach rechts">
-                    --><summary class="tipp-box__headline">Kleiner Tipp</summary>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint saepe aut quisquam qui commodi reiciendis nisi praesentium, harum quae temporibus laborum sunt architecto officia suscipit, sed adipisci ipsum aliquam dignissimos.
-                </details>
+                <button class="tipp-box">
+                    <img class="tipp-box__aufklapppfeil" src="aufklapp-pfeil.png" alt="Icon Pfeil nach rechts">
+                    <p class="tipp-box__headline">Kleiner Tipp</p>
+                </button>
+                    <p class="tipp-box__text hidden">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint saepe aut quisquam qui commodi reiciendis nisi praesentium, harum quae temporibus laborum sunt architecto officia suscipit, sed adipisci ipsum aliquam dignissimos.
+                    </p>
                 <section class="tag-cloud">
                    <span class="tag-cloud__element">Tankvolumen</span>
                    <span class="tag-cloud__element">Reichweite</span>
@@ -72,24 +76,25 @@
                    <span class="tag-cloud__element">Distanz</span>
                    </section>
                 </section>
-    <section class="question-box">
-        <img class="question-box__bookmark" src="wassertropfen.jpg" alt="Icon von einem Stern">
-        <h2 class="question-box__headline">FRAGE</h2>
-        <p class="question-box__question">Wie lange dauert ein Tankvorgang mit einem Wasserstoffauto durchschnittlich?</p>
-        <p class="question-box__answer">a) 8 Stunden</p>
-        <p class="question-box__answer">b) zwischen 3 und 5 Minuten</p>
-        <p class="question-box__answer">c) 8 Sekunden</p>
-        <details class="tipp-box">
-            <!--<img class="tipp-box__aufklapppfeil" src="aufklapp-pfeil.png" alt="Icon Pfeil nach rechts">
-            --><summary class="tipp-box__headline">Kleiner Tipp</summary>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint saepe aut quisquam qui commodi reiciendis nisi praesentium, harum quae temporibus laborum sunt architecto officia suscipit, sed adipisci ipsum aliquam dignissimos.
-        </details>
-        <section class="tag-cloud">
-           <span class="tag-cloud__element">Tanken</span>
-           <span class="tag-cloud__element">Zeit</span>
-           <span class="tag-cloud__element">Dauer</span>
-           <span class="tag-cloud__element">Prozess</span>
-           <span class="tag-cloud__element">Vorgang</span>
+        <section class="question-box">
+                <img class="question-box__bookmark" src="wassertropfen.jpg" alt="Icon von einem Stern">
+                <h2 class="question-box__headline">FRAGE</h2>
+                <p class="question-box__question">Wie lange dauert ein Tankvorgang mit einem Wasserstoffauto durchschnittlich?</p>
+                <p class="question-box__answer">a) 8 Stunden</p>
+                <p class="question-box__answer">b) zwischen 3 und 5 Minuten</p>
+                <p class="question-box__answer">c) 8 Sekunden</p>
+                <button class="tipp-box">
+                    <img class="tipp-box__aufklapppfeil" src="aufklapp-pfeil.png" alt="Icon Pfeil nach rechts">
+                    <p class="tipp-box__headline">Kleiner Tipp</p>
+                </button>
+                    <p class="tipp-box__text hidden">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint saepe aut quisquam qui commodi reiciendis nisi praesentium, harum quae temporibus laborum sunt architecto officia suscipit, sed adipisci ipsum aliquam dignissimos.
+                    </p>
+                <section class="tag-cloud">
+                    <span class="tag-cloud__element">Tanken</span>
+                    <span class="tag-cloud__element">Zeit</span>
+                    <span class="tag-cloud__element">Dauer</span>
+                    <span class="tag-cloud__element">Prozess</span>
+                    <span class="tag-cloud__element">Vorgang</span>
         </section>
         </section>
     <section class="question-box">
@@ -99,11 +104,12 @@
             <p class="question-box__answer">a) 60 Euro</p>
             <p class="question-box__answer">b) 80 Euro</p>
             <p class="question-box__answer">c) 100 Euro</p>
-            <details class="tipp-box">
-                <!--<img class="tipp-box__aufklapppfeil" src="aufklapp-pfeil.png" alt="Icon Pfeil nach rechts">
-                --><summary class="tipp-box__headline">Kleiner Tipp</summary>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint saepe aut quisquam qui commodi reiciendis nisi praesentium, harum quae temporibus laborum sunt architecto officia suscipit, sed adipisci ipsum aliquam dignissimos.
-            </details>
+            <button class="tipp-box">
+                <img class="tipp-box__aufklapppfeil" src="aufklapp-pfeil.png" alt="Icon Pfeil nach rechts">
+                <p class="tipp-box__headline">Kleiner Tipp</p>
+            </button>
+                <p class="tipp-box__text hidden">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint saepe aut quisquam qui commodi reiciendis nisi praesentium, harum quae temporibus laborum sunt architecto officia suscipit, sed adipisci ipsum aliquam dignissimos.
+                </p>
             <section class="tag-cloud">
                <span class="tag-cloud__element">Tanken</span>
                <span class="tag-cloud__element">Kosten</span>
@@ -119,11 +125,12 @@
         <p class="question-box__answer">a) Wasserstoff</p>
         <p class="question-box__answer">b) reines Trinkwasser</p>
         <p class="question-box__answer">c) nichts</p>
-        <details class="tipp-box">
-            <!--<img class="tipp-box__aufklapppfeil" src="aufklapp-pfeil.png" alt="Icon Pfeil nach rechts">
-            --><summary class="tipp-box__headline">Kleiner Tipp</summary>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint saepe aut quisquam qui commodi reiciendis nisi praesentium, harum quae temporibus laborum sunt architecto officia suscipit, sed adipisci ipsum aliquam dignissimos.
-        </details>
+        <button class="tipp-box">
+            <img class="tipp-box__aufklapppfeil" src="aufklapp-pfeil.png" alt="Icon Pfeil nach rechts">
+            <p class="tipp-box__headline">Kleiner Tipp</p>
+        </button>
+            <p class="tipp-box__text hidden">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint saepe aut quisquam qui commodi reiciendis nisi praesentium, harum quae temporibus laborum sunt architecto officia suscipit, sed adipisci ipsum aliquam dignissimos.
+            </p>
         <section class="tag-cloud">
            <span class="tag-cloud__element">Emissionen</span>
            <span class="tag-cloud__element">Abgase</span>
